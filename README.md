@@ -1,2 +1,2 @@
-# react-start-kit
-a start file for react project.
+# comp
+a system build for competition
