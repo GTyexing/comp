@@ -1,0 +1,139 @@
+.common {
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 25px;
+	clear: both;
+	position: relative;
+}
+
+.messageBoxL {
+  max-width: 50%;
+	background-color: #e5e5ea;
+	float: left;
+	margin: 5px 10px;
+}
+
+.messageBoxR {
+  width: 100%;
+	background-color: #36a9fc;
+  color: #fff;
+  float: right;
+}
+
+.messageC, input:checked + .messageBoxR {
+  animation: small .4s ease;
+  transition: 1s;
+  background-color: #0AE370;
+  color: #fff;
+  float: right;
+  width: 100%;
+}
+
+.common::before,
+.common::after {
+	content: '';
+  position: absolute;
+  bottom: 0;
+  width: 35px;
+  height: 25px;
+}
+
+.messageBoxL::before,
+.messageBoxL::after {
+  border-radius: 0 0 50% 0;
+}
+
+.messageBoxR:before,
+.messageBoxR:after {
+  border-radius: 0 0 0 50%;
+}
+
+.messageC::before, 
+.messageC::after, 
+input:checked + .messageBoxR:before,
+input:checked + .messageBoxR:after {
+  border-radius: 0 0 0 50%;
+}
+
+.messageBoxL::before {
+  height: 20px;
+  left: -23px;
+  background-color: #e5e5ea;
+}
+.messageBoxL::after {
+    left: -35px;
+  bottom: -3px;
+  background-color: #ffffff;
+}
+
+.messageBoxR:before {
+  height: 20px;
+  right: -23px;
+  background-color: #36a9fc;
+}
+.messageBoxR:after {
+  right: -35px;
+  bottom: -3px;
+  background-color: #ffffff;
+}
+
+.messageC::before, 
+input:checked + .messageBoxR:before {
+  transition: 1s;
+  height: 20px;
+  right: -23px;
+  background-color: #0AE370;
+}
+.messageC::after, 
+input:checked + .messageBoxR:after {
+  transition: 1s;
+  right: -35px;
+  bottom: -3px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 50%;
+  color: #fff;
+  float: right;
+  clear: both;
+  position: relative;
+  margin: 5px 10px;
+}
+
+.input {
+  z-index: 500;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.tip {
+  padding-top: 10px;
+  opacity: 0;
+}
+
+.tip2 {
+  margin-top: -20px;
+  opacity: 0;
+}
+
+.ani {
+  animation: showUp 1s ease;
+}
+
+@keyframes small {
+  50% {
+    transform: scale(0.95); 
+  }
+  80% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes showUp {
+  50% {
+    opacity: 1;
+  }
+}

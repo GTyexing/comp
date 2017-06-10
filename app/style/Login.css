@@ -1,0 +1,30 @@
+.header {
+	display: flex;
+	justify-content: space-between; 
+	position: absolute;
+	background: #fff;
+	height: 80px;
+	width: 100%; 
+	padding: 0 120px;
+	box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+	z-index: 500;
+}
+
+.input {
+	margin: 10px;
+	height: 56px;
+	font-size: 18px;
+}
+
+.button {
+	margin: 10px; 
+	height: 48px; 
+	font-size: 18px; 
+	width: 300px;
+}
+
+.container {
+	height: 100%;
+	background-color: #FAFAFA; 
+	padding-top: 150px;
+}

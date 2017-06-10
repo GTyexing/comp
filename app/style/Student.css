@@ -1,0 +1,32 @@
+.header1 {
+  display: flex;
+  max-width: 1000px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: rgba(0,0,0,.5);
+  background: white;
+}
+
+.header2 {
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-size: 14px;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: none;
+}
+
+.userarea {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.linktext {
+  text-decoration: none!important;
+  color: rgba(0,0,0,.44)!important;
+}

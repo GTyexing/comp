@@ -1,0 +1,62 @@
+.typingIndicator {
+  background-color: #e5e5ea;
+  width: auto;
+  border-radius: 25px;
+  padding: 12px;
+  margin: 5px 10px;
+  position: relative;
+  float: left;
+  clear: both;
+}
+.typingIndicator::before, .typingIndicator::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #e5e5ea;
+}
+.typingIndicator::after {
+  height: 8px;
+  width: 8px;
+  left: -8px;
+  bottom: -8px;
+}
+.typingIndicator span {
+  height: 14px;
+  width: 14px;
+  float: left;
+  margin: 0 1px;
+  background-color: #9E9EA1;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.typingIndicator span:nth-of-type(1) {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-delay: 0.3333s;
+  animation-iteration-count: infinite;
+}
+.typingIndicator span:nth-of-type(2) {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-delay: 0.6666s;
+  animation-iteration-count: infinite;
+}
+.typingIndicator span:nth-of-type(3) {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-delay: 0.9999s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,52 @@
+.card {
+  font-size: 14px;
+  border: 1px solid rgba(0,0,0,.09);
+  background: white;
+  border-radius: 1px!important;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  padding: 10px 20px;
+}
+
+.button {
+  margin: 10px;
+  border-radius: 999em;
+  border-color: #108ee9;
+}
+
+.opa {
+  transition: .8s;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.tran {
+  transition: .8s;
+}
+
+.dis {
+  display: none;
+}
+
+.paper {
+  position: relative;
+  height: 1000;
+  width: 1000;
+  transition: all 1s;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.09);
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  overflow: scroll;
+  opacity: 0;
+  margin-bottom: 100px;
+}
+
+.paperShow {
+  opacity: 1;
+}
+
+.paper::-webkit-scrollbar {
+    display: none;
+}

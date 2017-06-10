@@ -1,0 +1,17 @@
+.card {
+  font-size: 14px;
+  border: 1px solid rgba(0,0,0,.09);
+  background: white;
+  border-radius: 1px!important;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  padding: 10px 20px;
+}
+
+.coll {
+  text-align: center;
+  margin: 10;
+}
+
+.coll:hover {
+  color: #36A9FC;
+}

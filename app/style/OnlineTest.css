@@ -1,0 +1,64 @@
+.chooseTable {
+  font-size: x-large;
+  position: absolute;
+  padding: 10px 20px;
+  margin: 10px 0;
+  right: 0;
+  left: 0;
+  border: 1px solid rgba(0,0,0,.09);
+  background: white;
+  border-radius: 1px!important;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+
+.button {
+  margin: 10px;
+  border-radius: 999em;
+  border-color: #108ee9;
+}
+
+.Top {
+  top: 120px;
+  transition: .3s;
+  opacity: 0;
+  font-size: xx-large;
+}
+
+.Top2 {
+  top: 210px;
+  height: 2000px;
+  transition: .3s;
+  opacity: 0;
+}
+
+.opa {
+  opacity: 1;
+  border-top: none;
+}
+
+.Hide {
+  display: none;
+}
+
+.dangerButton {
+  margin: 10px;
+  border-radius: 999em;
+}
+
+.startTest {
+  display: flex;
+  justify-content: space-between;
+  animation: showUp .5s;
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
