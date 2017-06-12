@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Icon, Button } from 'antd';
-import styles from '../style/main.css';
-import style from '../style/Report.css';
-import * as actionExam from '../actions/actionExam';
-import * as actionPractice from '../actions/actionPractice';
-import QuestionCard from '../component/QuestionCard';
-import ExamCloze from '../component/ExamCloze';
+import styles from '../../style/main.css';
+import style from '../../style/Report.css';
+import * as actionExam from '../../actions/actionExam';
+import * as actionPractice from '../../actions/actionPractice';
+import QuestionCard from '../../component/QuestionCard';
+import ExamCloze from '../../component/ExamCloze';
 
 class Enhance extends Component {
   state = {

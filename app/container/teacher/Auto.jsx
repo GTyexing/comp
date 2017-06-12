@@ -12,12 +12,12 @@ import {
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import classnames from 'classnames';
-import AQuestionCard from '../component/AQuestionCard';
-import AClozeCon from '../component/AClozeCon';
-import * as actionPractice from '../actions/actionPractice';
-import * as actionAuto from '../actions/actionAuto';
-import styles from '../style/main.css';
-import style from '../style/Auto.css';
+import AQuestionCard from '../../component/AQuestionCard';
+import AClozeCon from '../../component/AClozeCon';
+import * as actionPractice from '../../actions/actionPractice';
+import * as actionAuto from '../../actions/actionAuto';
+import styles from '../../style/main.css';
+import style from '../../style/Auto.css';
 
 const marks = {
   0: '容易',

@@ -3,19 +3,19 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute } from 'react-router';
 
-import Student from './container/Student';
 import Login from './container/Login';
+import Student from './container/Student';
 import Teacher from './container/Teacher';
-import Practice from './container/Practice';
-import OnlineTest from './container/OnlineTest';
-import Report from './container/Report';
+import Practice from './container/student/Practice';
+import OnlineTest from './container/student/OnlineTest';
+import Report from './container/student/Report';
+import Unsolve from './container/student/Unsolve';
+import Enhance from './container/student/Enhance';
+import Auto from './container/teacher/Auto';
+import Info from './container/teacher/Info';
+import Manual from './container/teacher/Manual';
+import History from './container/teacher/History';
 import Favorites from './container/Favorites';
-import Unsolve from './container/Unsolve';
-import Auto from './container/Auto';
-import Info from './container/Info';
-import Manual from './container/Manual';
-import History from './container/History';
-import Enhance from './container/Enhance';
 
 import store, { history } from './store';
 
@@ -28,17 +28,17 @@ const router = (
         <Route path="test" component={OnlineTest} />
         <Route path="report" component={Report} />
         <Route path="unsolve" component={Unsolve} />
-        <Route path="favorites" component={Favorites} />
         <Route path="enhance" component={Enhance} />
       </Route>
       <Route path="teacher" component={Teacher}>
         <IndexRoute component={Auto} />
         <Route path="manual" component={Manual} />
         <Route path="history" component={History} />
-        <Route path="favorites" component={Favorites} />
         <Route path="info" component={Info} />
       </Route>
+      <Route path="favorites" component={Favorites} />
     </Router>
+
   </Provider>
 );
 

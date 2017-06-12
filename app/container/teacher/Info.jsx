@@ -11,9 +11,9 @@ import {
 } from 'recharts';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as actionExam from '../actions/actionExam';
-import styles from '../style/main.css';
-import style from '../style/Report.css';
+import * as actionExam from '../../actions/actionExam';
+import styles from '../../style/main.css';
+import style from '../../style/Report.css';
 
 const data = [
   { name: '考试 1', ranking: 50, averageScore: 20 },

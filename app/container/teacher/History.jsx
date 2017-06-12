@@ -2,17 +2,11 @@ import React, { Component } from 'react';
 import { Collapse } from 'antd';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import HQuestionCard from '../component/HQuestionCard';
-import * as actionHistory from '../actions/actionHistory';
-import styles from '../style/main.css';
+import HQuestionCard from '../../component/HQuestionCard';
+import * as actionHistory from '../../actions/actionHistory';
+import styles from '../../style/main.css';
 
 const { Panel } = Collapse;
-
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
 
 class History extends Component {
   componentDidMount() {

@@ -3,13 +3,13 @@ import { Button, Affix } from 'antd';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import classnames from 'classnames';
-import * as actionPractice from '../actions/actionPractice';
-import * as actionExam from '../actions/actionExam';
-import CountDown from '../component/CountDown';
-import style from '../style/OnlineTest.css';
-import styles from '../style/main.css';
-import QuestionCard from '../component/QuestionCard';
-import ExamCloze from '../component/ExamCloze';
+import * as actionPractice from '../../actions/actionPractice';
+import * as actionExam from '../../actions/actionExam';
+import CountDown from '../../component/CountDown';
+import style from '../../style/OnlineTest.css';
+import styles from '../../style/main.css';
+import QuestionCard from '../../component/QuestionCard';
+import ExamCloze from '../../component/ExamCloze';
 
 class OnlineTest extends Component {
   state = {

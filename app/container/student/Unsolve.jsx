@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import { Affix, Menu } from 'antd';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as actionExam from '../actions/actionExam';
-import style from '../style/Practice.css';
-import styles from '../style/main.css';
-import UQuestionCard from '../component/UQuestionCard';
-import UnsolveClozeCon from '../component/UnsolveCon';
-
-const SubMenu = Menu.SubMenu;
+import * as actionExam from '../../actions/actionExam';
+import styles from '../../style/main.css';
+import UQuestionCard from '../../component/UQuestionCard';
+import UnsolveClozeCon from '../../component/UnsolveCon';
 
 class Unsolve extends Component {
   state = {

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Button, Affix, Menu } from 'antd';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as actionPractice from '../actions/actionPractice';
-import style from '../style/Practice.css';
-import styles from '../style/main.css';
-import QuestionCard from '../component/QuestionCard';
-import PracticeCloze from '../component/PracticeCloze';
+import * as actionPractice from '../../actions/actionPractice';
+import style from '../../style/Practice.css';
+import styles from '../../style/main.css';
+import QuestionCard from '../../component/QuestionCard';
+import PracticeCloze from '../../component/PracticeCloze';
 
 const SubMenu = Menu.SubMenu;
 

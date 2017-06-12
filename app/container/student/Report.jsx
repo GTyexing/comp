@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Select, Input, Affix, Card, Icon } from 'antd';
+import { Select, Input, Icon } from 'antd';
 import {
   LineChart,
   Line,
@@ -11,14 +11,11 @@ import {
 } from 'recharts';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as actionExam from '../actions/actionExam';
-import styles from '../style/main.css';
-import style from '../style/Report.css';
-import QuestionCard from '../component/QuestionCard';
-import ExamCloze from '../component/ExamCloze';
-
-const Option = Select.Option;
-const Search = Input.Search;
+import * as actionExam from '../../actions/actionExam';
+import styles from '../../style/main.css';
+import style from '../../style/Report.css';
+import QuestionCard from '../../component/QuestionCard';
+import ExamCloze from '../../component/ExamCloze';
 
 const data = [
   { name: '考试 1', ranking: 50, result: 20 },
