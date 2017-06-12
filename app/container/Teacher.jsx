@@ -10,9 +10,7 @@ class Teacher extends React.Component {
       <div>
         <header style={{ backgroundColor: 'white' }}>
           <div className={style.header1}>
-            <div className={styles.logo}>
-              <Link to="/" style={{ color: 'rgba(0,0,0,.50)' }}>卓联智慧组卷</Link>
-            </div>
+            <div className={styles.logo} />
             <div className={style.userarea}>
               <div
                 style={{
