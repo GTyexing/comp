@@ -1,21 +1,19 @@
-.header1 {
-  display: flex;
-  max-width: 1000px;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0 20px;
-  color: rgba(0,0,0,.5);
-  background: white;
+.container {
+	display: grid;
+	height: 100%;
+	grid-template-rows: 5rem 3rem auto;
+  grid-template-columns: 100%;
+  width: 100%;
 }
 
 .header2 {
-    display: flex;
-    max-width: 1000px;
-    justify-content: space-around;
-    margin: 0 auto;
-    font-size: 14px;
-    border-top: 1px solid #f3f3f3;
-    border-bottom: none;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1rem;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: none;
 }
 
 .userarea {
@@ -23,10 +21,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  margin: 1.5rem 0;
+  float: right;
 }
 
 .linktext {
   text-decoration: none!important;
   color: rgba(0,0,0,.44)!important;
+}
+
+.avatar {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  background: rgba(0,0,0,.1);
+}
+
+.selectBar {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+  background-color: white;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.ul {
+  height: 100;
+  padding: 0 20px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: grid;
+  grid-auto-flow: column;
 }

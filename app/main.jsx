@@ -4,8 +4,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute } from 'react-router';
 
 import Login from './container/Login';
-import Student from './container/Student';
-import Teacher from './container/Teacher';
+import Header from './container/Header';
 import Practice from './container/student/Practice';
 import OnlineTest from './container/student/OnlineTest';
 import Report from './container/student/Report';
@@ -23,20 +22,21 @@ const router = (
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={Login} />
-      <Route path="student" component={Student}>
+      <Route path="student" component={Header}>
         <IndexRoute component={Practice} />
         <Route path="test" component={OnlineTest} />
         <Route path="report" component={Report} />
         <Route path="unsolve" component={Unsolve} />
         <Route path="enhance" component={Enhance} />
+        <Route path="favorites" component={Favorites} />
       </Route>
-      <Route path="teacher" component={Teacher}>
+      <Route path="teacher" component={Header}>
         <IndexRoute component={Auto} />
         <Route path="manual" component={Manual} />
         <Route path="history" component={History} />
         <Route path="info" component={Info} />
+        <Route path="favorites" component={Favorites} />
       </Route>
-      <Route path="favorites" component={Favorites} />
     </Router>
 
   </Provider>

@@ -5,6 +5,7 @@ import { Input, Button, Checkbox } from 'antd';
 import PropTypes from 'prop-types';
 import style from '../style/Login.css';
 import styles from '../style/main.css';
+import HOCHeader from '../component/HOCHeader';
 
 import * as actionLogin from '../actions/actionLogin';
 
@@ -32,28 +33,26 @@ class Login extends Component {
 
   render() {
     const { login } = this.state;
+    const Header = HOCHeader(
+      <Button
+        style={{
+          float: 'right',
+          margin: '1.5rem 0',
+        }}
+        type="primary"
+        size="large"
+        className={styles.button}
+        onClick={this.loginSignUpSwitch}
+      >
+        {login ? '注册' : '登录'}
+      </Button>,
+    );
     return (
       <div className={style.container}>
-        <header className={style.header}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 10px' }}>
-            <div className={styles.logo} />
-            <Button
-              style={{
-                float: 'right',
-                margin: '24px 0',
-              }}
-              type="primary"
-              size="large"
-              className={styles.button}
-              onClick={this.loginSignUpSwitch}
-            >
-              {login ? '注册' : '登录'}
-            </Button>
-          </div>
-        </header>
+        <Header haveBoxShadow />
         <div>
-          <div style={{ width: 300, margin: '50px auto' }}>
-            <h1 style={{ margin: 10, textAlign: 'center' }}>
+          <div style={{ width: '15rem', margin: '3rem auto' }}>
+            <h1 style={{ margin: '.5rem', textAlign: 'center' }}>
               {login ? '登录到智慧组卷' : '注册'}
             </h1>
             <Input
